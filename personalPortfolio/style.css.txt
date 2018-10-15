@@ -1,0 +1,15 @@
+#welcome-section {
+  height: 100vh;
+}
+
+#navbar {
+  position: fixed;
+  top: 0px;
+  z-index: 1;
+}
+
+@media(max-width:800px) {
+  #links {
+    background-color: grey;
+  }
+}

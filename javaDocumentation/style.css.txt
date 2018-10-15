@@ -1,0 +1,36 @@
+body {
+  font-family: Helvetica, sans-serif;
+}
+
+header {
+  font-size: 26px;
+  font-weight: bold;
+}
+
+#navbar {
+  position: fixed;
+  left: 0;
+  width: 300px;
+  height: 100%;
+  background-color: white;
+}
+
+#main-doc {
+  position: absolute;
+  margin-left: 300px;
+}
+
+@media (max-width: 800px) {
+  #navbar {
+    background-color: grey;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  
+  #main-doc {
+    margin-top: 200px;
+  }
+}

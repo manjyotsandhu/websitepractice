@@ -1,0 +1,153 @@
+
+body {
+  font-family: 'Roboto', sans-serif !important;
+  font-weight: 300 !important;
+  background-color: #f8f8f8;
+  color: #303030 !important;
+}
+
+.form-container {
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 0 50px 5px #EBEBEB;
+}
+
+.identity {
+  background-color: yellow;
+}
+
+.btn {
+    padding-left: 30px !important;
+    padding-right: 30px !important;
+      font-weight: 600 !important;
+
+      border-radius: 6px !important;
+}
+
+.btnCustom {
+  color: grey !important;
+  background-color: #EBEBEB !important;
+}
+
+.btnSave {
+  background-color: #BD081C !important;
+  color: white !important;
+}
+
+.bottomButtons {
+  margin: 0 10px 0 10px !important;
+  float: right;
+}
+
+input {
+border-radius: 6px !important;
+}
+select {
+    border-radius: 6px !important;
+}
+
+.centerise {
+  min-height: 100%;
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+}
+
+.sidebarList {
+  padding: 0;
+}
+
+.list-group-item {
+  border: 0 !important;
+  padding-left: 20px !important;
+  color: #707070 !important;
+  font-weight: 700;
+}
+
+.list-group-item.active {
+  background-color: #BD081C !important;
+  color: white !important;
+}
+
+.sidebar {
+  padding: 30px 0px 30px 0px  !important;
+  border-right: 1px solid #f8f8f8;
+}
+
+.mainContent {
+  padding: 30px !important;
+}
+
+.noPadding {
+  padding: 0px !important;
+}
+
+/* Radio */
+input[type="radio"] {
+    display:none;
+}
+
+input[type="radio"] + label span {
+  display: inline-block;
+  vertical-align: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid grey;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+input[type="radio"]:checked + label span {
+  width: 18px;
+  height: 18px;
+  background-color: grey;
+  border: 2px solid white;
+  border-radius: 50%;
+  box-shadow: 0 0 0 2px grey;
+}
+
+/* Slider */
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 24px;
+}
+
+.switch input {
+  display: none;
+}
+
+.slider {
+  position: absolute;
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  background-color: grey;
+  border-radius: 24px; /*The height*/
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  background-color: white;
+  border-radius: 50%;
+  left: 2px;
+  top: 2px;
+}
+
+input:checked + .slider {
+  background-color: #BD081C;
+}
+
+input:checked + .slider:before {
+  transform: translate(25px,0);
+    -webkit-transform: translate(25px,0); /** Chrome & Safari **/
+    -o-transform: translate(25px,0); /** Opera **/
+    -moz-transform: translate(25px,0); /** Firefox **/
+}

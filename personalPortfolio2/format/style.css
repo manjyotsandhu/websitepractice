@@ -1,0 +1,154 @@
+:root {
+    --colour-black: #2B2A2B;
+    --colour-dark-blue: #445C74;
+    --colour-light-blue: #C4CDDB;
+    --colour-dark-grey: #524A46;
+    --colour-light-grey: #A4A6A7;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: var(--color-black);
+    text-decoration: none;
+    -moz-transition:color .5s ease-in;
+    -o-transition:color .5s ease-in;
+    -webkit-transition:color .5s ease-in;
+}
+
+a:hover {
+    color: yellow;
+}
+
+body {
+    color: var(--colour-black);
+    font-size: 1em;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+}
+
+#index {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    color: white;
+}
+
+#index-bg {
+    position: relative;
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-image: url("Background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.center {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+}
+
+.page-title {
+    font-size: 4.5em;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: -10px;
+    color: var(--colour-dark-blue);
+}
+
+.page-subtitle {
+    font-size: 1.5em;
+}
+
+.page-links {
+    text-transform: uppercase;
+}
+
+.page-links > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.roboto-bold {
+    font-weight: 500;
+    color: var(--colour-dark-blue);
+}
+
+.font-grey {
+    color: var(--colour-light-grey);
+}
+
+.return-navigation {
+    margin-bottom: 100px;
+}
+
+#about {
+    width: 80%;
+    margin: 100px auto;
+}
+
+#table-education {
+    width: 100%;
+    margin: 100px 0 100px 0;
+}
+
+.td-education-first {
+    width: 50%;
+}
+
+.td-education-second {
+    text-align: right;
+    height: 100%;
+}
+
+.education-first-circle {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background-color: var(--colour-dark-blue);
+    color: white;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    font-size: 2.5em;
+}
+
+.education-first-text {
+    display: inline-block;
+    margin-left: 10px;
+}
+
+.spacer {
+    height: 50px;
+    background-color: transparent;
+}
+
+#table-extras {
+    width: 100%;
+}
+
+.td-extras {
+    background-color: var(--colour-dark-blue);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.td-extras-spacer {
+    width: 50px;
+}
+
+.td-extras-title {
+    text-transform: uppercase;
+    font-weight: 500;
+}
+

@@ -1,0 +1,29 @@
+
+
+<header id="header">
+  <nav id="nav-bar">
+    <img id="header-img" src="http://pwtthemes.com/demo/hannari/wp-content/uploads/2013/03/unicorn-wallpaper.jpg">
+
+    <div id="navbar-links">
+    <a href="#video" class="nav-link">Video</a>
+    <a href="#header" class="nav-link">Link 2</a>
+    <a href="#form" class="nav-link">Link 3</a>
+    </div>
+  </nav>
+</header>
+
+<main>
+  <section>
+    <video id="video" controls>
+  <source src="https://youtu.be/y8Yv4pnO7qc">
+</video>
+  </section>
+  <section>
+    <form id="form" action="https://www.freecodecamp.com/email-submit">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="Enter email">
+      <input type="submit" id="submit">
+    </form>
+
+  </section>
+</main>
