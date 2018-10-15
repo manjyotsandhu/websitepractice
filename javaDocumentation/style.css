@@ -1,36 +1,50 @@
-body {
-  font-family: Helvetica, sans-serif;
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
+
+@media screen {
+    body {
+        font-family: Roboto, sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+    }
 }
 
 header {
-  font-size: 26px;
-  font-weight: bold;
+    font-size: 2rem;
+    font-weight: 900;
 }
 
 #navbar {
-  position: fixed;
-  left: 0;
-  width: 300px;
-  height: 100%;
-  background-color: white;
+    position: fixed;
+    left: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+}
+
+#navbar ul {
+  list-style: none;
+}
+
+#navbar ul.li {
+  text-decoration: none;
 }
 
 #main-doc {
-  position: absolute;
-  margin-left: 300px;
+    position: absolute;
+    margin-left: 300px;
 }
 
 @media (max-width: 800px) {
-  #navbar {
-    background-color: grey;
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: auto;
-  }
-  
-  #main-doc {
-    margin-top: 200px;
-  }
+    #navbar {
+        background-color: grey;
+        z-index: 1;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: auto;
+    }
+
+    #main-doc {
+        margin-top: 200px;
+    }
 }
