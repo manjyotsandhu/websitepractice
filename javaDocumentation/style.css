@@ -1,10 +1,18 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,900');
 
+:root {
+    --light-grey: #F2F2F2;
+    --dark-grey: #414141;
+    --code-bg: #F7F7F7;
+}
+
 @media screen {
     body {
+        margin: 0;
         font-family: Roboto, sans-serif;
         font-size: 16px;
         font-weight: 400;
+        line-height: 1.5em;
     }
 }
 
@@ -13,25 +21,59 @@ header {
     font-weight: 900;
 }
 
+#title-nav {
+    text-align: center;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    margin: auto;
+}
+
 #navbar {
     position: fixed;
     left: 0;
-    width: 300px;
+    width: 350px;
     height: 100%;
     background-color: white;
+    border-right: 1px solid var(--light-grey);
 }
 
 #navbar ul {
   list-style: none;
+  padding: 0px;
 }
 
-#navbar ul.li {
-  text-decoration: none;
+#navbar ul li {
+  border-bottom: 1px solid var(--light-grey);
+  padding: 20px;
+}
+
+#navbar ul li a {
+    text-decoration: none;
+    color: var(--dark-grey);
 }
 
 #main-doc {
     position: absolute;
-    margin-left: 300px;
+    left: 400px;
+    padding: 20px 20px 20px 0px;
+}
+
+.main-section {
+    margin-left: 20px;
+    padding: 20px 0px;
+}
+
+.main-section header {
+    margin-left: -20px;
+}
+
+code {
+    display: block;
+    position: relative;
+    background-color: var(--code-bg);
+    border-radius: 5px;
+    padding: 15px;
+    margin: 20px;
 }
 
 @media (max-width: 800px) {

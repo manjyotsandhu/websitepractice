@@ -5,25 +5,77 @@
     <meta charset="utf-8">
     <title>Projects</title>
     <link rel="stylesheet" href="style.css" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width,user-scalable=no">
 </head>
 
 <body>
     <header>
-        <nav id="navbar">
-            <a href="#projects">Projects</a>
-        </nav>
-    </header>
-    <section id="welcome-section">
-        <h1>Welcome</h1>
-    </section>
-    <section id="projects">
-        <div class="project-tile">
-            <p>Project tile</p><a href="www.google.com">Link to project</a>
-        </div>
-    </section>
-    <section id="links">
-        <a href="www.github.com/manjyotsandhu" id="profile-link" target="_blank">GitHub</a>
-    </section>
-</body>
 
+        <nav id="navbar">
+            <div id="nav-links">
+                <a href="#welcome-section" id="welcome-link" class="nav active">About</a>
+                <a href="#project-section" id="project-link" class="nav">Projects</a>
+                <a href="#contact-section" id="contact-link" class="nav">Contact</a>
+            </div>
+        </nav>
+        <div id="welcome-section"><h1><span class="blue-text">hey</span> i'am mimic</h1><h2 class="welcome-subtitle">a web developer</h2>
+        </div>
+    </header>
+    <section id="project-section">
+        <h2 class="projects-subtitle">Here are some of my projects...</h2>
+        <div class="grid-container">
+            <div class="grid-item"><img src="001.png" class="grid-img">
+                <div class="grid-caption">E-commerce receipt</div>
+            </div>
+            <div class="grid-item"><img src="002.png" class="grid-img">
+                <div class="grid-caption">Credit card checkout</div>
+            </div>
+            <div class="grid-item"><img src="003.png" class="grid-img">
+                <div class="grid-caption">Calculator application</div>
+            </div>
+            <div class="grid-item"><img src="004.png" class="grid-img">
+                <div class="grid-caption">Messaging service</div>
+            </div>
+            <div class="grid-item"><img src="005.png" class="grid-img">
+                <div class="grid-caption">Flip clock</div>
+            </div>
+            <div class="grid-item"><img src="006.png" class="grid-img">
+                <div class="grid-caption">Newsletter sign up</div>
+            </div>
+        </div>
+        <button class="projects-button">See more</button>
+    </section>
+    <section id="contact-section">
+        <h2 class="contact-subtitle">Let's <span class="blue-text">work</span> together</h2>
+        <p>How do you take your coffee?</p>
+        <div id="contact-links">
+        	<!-- Icons from https://www.iconfinder.com/iconsets/free-social-1 -->
+        	<div class="link-group">
+        		<img src="https://cdn3.iconfinder.com/data/icons/free-social-1/60/Facebook-512.png" class="link-img">
+	        	<a href="#" id="github-link" target="_blank">Facebook</a>
+	    	</div>
+	    	<div class="link-group">
+        		<img src="https://cdn3.iconfinder.com/data/icons/free-social-1/60/Github-512.png" class="link-img">
+	        	<a href="#" id="facebook-link" target="_blank">GitHub</a>
+	    	</div>
+	    	<div class="link-group">
+        		<img src="https://cdn3.iconfinder.com/data/icons/free-social-1/60/Twitter-512.png" class="link-img">
+	        	<a href="#" id="twitter-link" target="_blank">Twitter</a>
+	    	</div>
+	    	<div class="link-group">
+        		<img src="https://cdn3.iconfinder.com/data/icons/free-social-1/60/Mail-512.png" class="link-img">
+	        	<a href="#" id="mail-link" target="_blank">Mail</a>
+	    	</div>
+	    	<div class="link-group">
+        		<img src="https://cdn3.iconfinder.com/data/icons/free-social-1/60/Phone-512.png" class="link-img">
+	        	<a href="#" id="call-link" target="_blank">Call</a>
+	    	</div>
+    	</div>
+    </section>
+    <footer id="footer-section">
+    	<p>For freeCodeCamp responsive web design course</p>
+    </footer>
+</body>
 </html>
